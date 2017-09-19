@@ -8,7 +8,8 @@ pkg_shasum="2c1a9dfb501d75811abc1f3cd765e4cad3add3131dc8fa37fbf1c828bb103ad8"
 pkg_deps=(core/docker core/curl core/node)
 pkg_build_deps=(core/git core/postgresql)
 pkg_binds=( [database]="port" )
-pkg_expose=(5001)
+pkg_exposes=(port)
+pkg_exports=([port]=port)
 pkg_svc_user="root"
 pkg_binds=(
 [db]
