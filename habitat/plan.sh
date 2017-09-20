@@ -13,6 +13,22 @@ pkg_exports=([port]=port)
 pkg_svc_user="root"
 pkg_binds=(
 [db]
+
+
+image: postgres:9.4
+    container_name: db
+    volumes:
+      - "db-data:/var/lib/postgresql/data"
+    networks:
+      - back-tier
+
+volumes:
+  db-data:
+
+networks:
+  front-tier:
+  back-tier:
+
 adapter = "postgresql"
 name = "Votingapp_production"
 user = "Votingapp"

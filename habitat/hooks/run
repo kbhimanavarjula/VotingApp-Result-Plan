@@ -1,0 +1,2 @@
+cd  ${HAB_CACHE_SRC_PATH}/VotingApp/result/
+npm start
