@@ -76,8 +76,8 @@ do_install()
   # Copy over the nconf module to the package that we installed in do_build().
   mkdir -p "${pkg_prefix}/node_modules/"
   cp -vr VotingApp/result/* "${pkg_prefix}/node_modules/"
- # mkdir "/src/node_modules/" 
-  cp -vr VotingApp/result/* "/src/"
+ 
+  cp -vr VotingApp/result/* "/src/node_modules"
   cd VotingApp/result/
   build_line "build line is ${HAB_CACHE_SRC_PATH}"
   build_line "pkg fir name is ${pkg_dirname}"

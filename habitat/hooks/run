@@ -1,2 +1,4 @@
-cd  ${HAB_CACHE_SRC_PATH}/VotingApp/result/
+#cd ${HAB_CACHE_SRC_PATH}/${pkg_dirname}/VotingApp/result
+#cd /hab/cache/src/VotingApp-Result-Plan-1.0.0/VotingApp/result
+cd /src/
 npm start
